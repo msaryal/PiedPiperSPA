@@ -1,0 +1,305 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/roboto-v30-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+    url('../fonts/roboto-v30-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/roboto-v30-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+    url('../fonts/roboto-v30-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/roboto-v30-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: #000000;
+}
+
+/**, *::before, *::after{
+  box-sizing: inherit;
+}*/
+
+.wrapper{
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+/*header styles starts*/
+.header{
+  background-color: #007765;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header_wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+
+.header_list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header_item{
+  margin-right: 24px;
+}
+
+.header_item:last-child{
+  margin-right: 0;
+}
+
+.header_link{
+  color: white;
+  text-decoration: none
+}
+
+.header_link:hover, .header_link:focus, .header_link:active{
+  opacity: .75;
+}
+/*header styles end*/
+
+/*intro styles start*/
+.intro{
+  min-height: 403px;
+  background: url(/img/image.png) no-repeat;
+  padding-top: 200px;
+}
+
+.intro_title{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 84px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.theproblem{
+  background-color: #EEEEEE;
+}
+
+.theproblem h2{
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 75px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #007765;
+  text-shadow: /*0px 4px 4px rgba(0, 0, 0, 0.25)*/ -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  padding-top: 48px;
+  padding-bottom: 16px;
+}
+
+.theproblem_text{
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+
+  color: #000000;
+  padding-bottom: 48px;
+}
+/*intro styles end*/
+
+/*neoron styles start*/
+.neuron{
+  min-height: 483px;
+  background: url(/img/image-1.png) no-repeat;
+}
+
+.neuron_text{
+  padding: 129px 80px 129px 80px;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.introducing h2{
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  color: #007765;
+  padding-top: 48px;
+  padding-bottom: 16px;
+}
+
+.logo{
+  float: left;
+}
+
+.introducing_text1{
+  padding-left: 218px;
+  padding-bottom: 40px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+
+  color: #000000;
+}
+
+.introducing_text2{
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+
+  color: #000000;
+  padding-bottom: 48px;
+}
+
+.theteam{
+  background-color: #EEEEEE;
+  padding-bottom: 48px;
+}
+
+.theteamtitle{
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  color: #007765;
+  padding-top: 48px;
+  padding-bottom: 32px;
+}
+
+.cart{
+  float: left;
+  height: 280px;
+  width: 330px;
+}
+
+.img_employee{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+}
+
+.name_employee{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #007765;
+  text-align: center;
+}
+
+.text_employee{
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  text-align: center;
+}
+
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+}
+
+.footer{
+  height: 178px;
+  background-color: #333333;
+}
+
+.footer_wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer_text{
+  padding: 55px 250px 55px 250px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+}
